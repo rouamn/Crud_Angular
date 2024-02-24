@@ -1,0 +1,28 @@
+<form [formGroup]="fg" (ngSubmit)="onSubmit(fg.value)">
+  <div>
+  <label>name</label>
+  <input class="form-control" type="text" formControlName="name">
+  <div *ngIf="name?.errors?.['required']">Name is required.</div>
+</div>
+<div>
+  <label>price</label>
+  <input type="text" class="form-control" formControlName="price">
+  <div *ngIf="price?.errors?.['pattern']">Price ne contient que des caractères numériques.</div>
+</div>
+<div>
+  <label>description</label>
+  <input type="text" formControlName="description">
+  <div *ngIf="description?.errors?.['minlength']">Description contient au moins 10 caractères.</div>
+</div>
+
+  <input type="submit" value="save" [disabled]="!fg.valid || name?.errors?.['required'] || price?.errors?.['pattern'] || (name?.valid && price?.invalid)" (click)="onSubmit">
+
+</form>
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+<!-- home-component.component.html -->
+<h1>List of products</h1>
+<div *ngFor="let product of products">
+  <p><strong>Product  </strong>{{product.id}}</p>
+  <h3>{{ product.name }}</h3>
+  <p>Price: {{ product.price }}</p>
+  <button (click)="addtocard(product)">Buy</button>
+  <button (click)="navigatetoUpdate(product.id)">update</button>
+  <button (click)="navigatetodetails(product.id)">Details</button>
+  <button (click)="deleteProduct(product.id)">Delete</button>
+
+</div>

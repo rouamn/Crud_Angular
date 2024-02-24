@@ -1,0 +1,39 @@
+{
+  "product": [
+    {
+      "name": "ssg",
+      "price": 55,
+      "description": "ss",
+      "id": 4
+    },
+    {
+      "name": "fyy",
+      "price": "55",
+      "description": "fffffffffffffff",
+      "id": 5
+    }
+  ],
+  "card": [
+    {
+      "name": "ss",
+      "price": "55",
+      "description": "ssssssssss",
+      "id": 3
+    },
+    {
+      "name": "ss",
+      "price": "55",
+      "description": "ssssssssss",
+      "id": 4
+    },
+    {
+      "name": "fyy",
+      "price": "55",
+      "description": "fffffffffffffff",
+      "id": 5
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
